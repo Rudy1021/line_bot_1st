@@ -83,7 +83,7 @@ def handle_message(event):
 			line_bot_api.reply_message(event.reply_token, TextMessage(text='這我知道!!'))
 			break
 
-		if (arr[n] == '阿哲' and line_message == True and c == 10 and che == True):
+		if (arr[n] == user and line_message == True and c == 10 and che == True):
 			picc = random.randint(1, 10)
 			if(picc==10):
 				message = ImageSendMessage(
